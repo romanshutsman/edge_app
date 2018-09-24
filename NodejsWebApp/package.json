@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-web-app",
+  "version": "0.0.0",
+  "description": "NodejsWebApp",
+  "main": "server.js",
+  "author": {
+    "name": ""
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.14"
+  },
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "body-parser": "^1.18.3",
+    "edge": "^7.10.1",
+    "express": "^4.16.3",
+    "path": "^0.12.7"
+  }
+}
