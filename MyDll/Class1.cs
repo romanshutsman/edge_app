@@ -21,4 +21,14 @@ namespace MyDll
             Console.WriteLine(await func(".NET"));
         }
     }
+    public class Startup
+    {
+        public async Task<object> Test(object input)
+        {
+            Console.WriteLine("Hello C# method");
+            return "Hello C# method";
+
+
+        }
+    }
 }

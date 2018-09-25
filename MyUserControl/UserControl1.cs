@@ -30,7 +30,7 @@ namespace MyUserControl
 
             Cef.Initialize(browserSettings);
 
-            controlBrowser = new ChromiumWebBrowser("http://localhost:1337/");
+            controlBrowser = new ChromiumWebBrowser("http://localhost:4200/");
 
             panel1.Controls.Add(controlBrowser);
             controlBrowser.Dock = DockStyle.Fill;
@@ -98,7 +98,8 @@ namespace MyUserControl
 
         private void button1_Click(object sender, EventArgs e)
         {
-        //   var test =  MyDll.Class1.Start();
+            //   var test =  MyDll.Class1.Start();
+            controlBrowser.Load("http://localhost:4200/");
         }
 
         private void button2_Click(object sender, EventArgs e)
