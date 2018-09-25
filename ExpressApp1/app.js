@@ -7,6 +7,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+
 var routes = require('./routes/index');
 
 var app = express();
@@ -61,3 +62,18 @@ app.set('port', process.env.PORT || 8080);
 var server = app.listen(app.get('port'), function () {
     debug('Express server listening on port ' + server.address().port);
 });
+
+// var edge = require('edge');
+
+//var hello = edge.func(function () {/*
+//    async (input) => { 
+//        return ".NET welcomes " + input.ToString(); 
+//    }
+//*/});
+
+//hello('Node.js', function (error, result) {
+//    if (error) throw error;
+//    console.log(result);
+//});
+
+
